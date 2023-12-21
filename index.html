@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El Golf de Poseidon - Grupo Robles & Yasikov</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="shortcut icon" href="img/ico.ico">
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="preload.css">
+
+<style type="text/css">
+  
+
+.map-360-back{
+
+position: fixed;
+  margin-top: 180px;
+  margin-right: 5px;
+  top: 0px;
+  right: 0px;
+  width: 120px;
+ background-color: rgba(5, 160, 125, 0.8);
+  padding: 0px;
+  border-radius: 6%;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+ 
+
+
+}
+
+.map-360-back >a{
+
+color:white !important;display: block !important;text-align: center;
+
+}
+
+
+@media (max-width:768px) {
+  
+  .map-360-back {
+
+     margin-top: 60px;
+    
+  }
+
+
+}
+
+</style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> 
+</head>
+
+<script type="text/javascript">
+document.oncontextmenu = function(){return false;}
+</script>
+
+<script type="text/javascript">
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && 
+            (e.keyCode === 85)) {
+            return false;
+        }
+    };
+</script>
+<body class="multiple-scenes view-control-buttons">
+
+
+ <div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
+<div id="pano"></div>
+
+<div id="sceneList" class="contenedor">
+
+
+    <div class="map-360-desc">
+   
+
+    
+
+
+     <img src="img/golf-poseidon.png" alt="" class="img-fluid" >
+
+    </div>
+    
+    
+      <div class="map-360-back" >
+   
+     
+
+      
+    </div>
+
+
+
+
+     <div class="map-360">
+   
+
+    
+      <i class="fas fa-chevron-up to-open"></i>
+      <h5><img class="here-icon-2" src="img/icon2.png" alt=""> &nbsp; <span>Conoce tu ubicación</span></h5>
+      <figure>
+        <img class="here-icon" src="img/icon2.png" alt="">
+        
+      </figure>
+
+      <div class="zoom p-1 " >
+        <img width="100%" src="img/minimapa.png" alt="" height="220" >
+      </div>
+
+      <div class="legend">
+        <div class="legend-item">
+          <img src="img/lote-disponible.svg" alt="">
+          <span>Disponible</span>
+        </div>
+       
+        <div class="legend-item">
+          <img src="img/lote-vendido.svg" alt="">
+          <span>Vendido</span>
+        </div>
+
+      
+     
+     
+      </div>
+    </div>
+
+
+
+  <ul class="scenes">
+      
+      <a href="javascript:void(0)" class="scene" data-id="0-vista-panormica">
+        <li class="text"><i class="fas fa-eye mr-2"></i>Vista Panorámica</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-ingreso">
+        <li class="text"><i class="fas fa-door-open mr-1"></i>Ingreso</li>
+      </a>
+      
+
+
+
+
+
+       <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed btn-resize" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Etapa I </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              
+
+
+                <a href="javascript:void(0)" class="scene" data-id="2-etapa-i---vista-general">
+        <li class="text"><i class="fas fa-eye mr-2"></i>Etapa I - Vista General</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-mz-a3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. A3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-mz-b3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. B3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-mz-c3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. C3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-mz-d2">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. D2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-mz-d3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. D3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-mz-d3---1">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. D3 - 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-mz-e3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. E3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-mz-f3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. F3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-mz-f3---1">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. F3 - 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-mz-g3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. G3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-mz-g3---1">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. G3 - 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-mz-h3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. H3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-mz-i3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. I3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-mz-j3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. J3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-mz-k2">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. K2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-mz-l1">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. L1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-mz-l2">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. L2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-mz-l3">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. L3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-mz-m1">
+        <li class="text"> <i class="fas fa-landmark mr-2"></i>Mz. M1</li>
+      </a>
+            
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed btn-resize" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Etapa II </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+
+             
+                <a href="javascript:void(0)" class="scene" data-id="22-etapa-ii---vista-general">
+        <li class="text"><i class="fas fa-eye mr-2"></i>Etapa II - Vista General</li>
+      </a>
+              
+               
+            <a href="javascript:void(0)" class="scene" data-id="24-mz-a2">
+        <li class="text">Mz. A2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-mz-b2">
+        <li class="text">Mz. B2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-mz-c2">
+        <li class="text">Mz. C2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-mz-j1">
+        <li class="text">Mz. J1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-mz-k1">
+        <li class="text">Mz. K1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-mz-k3">
+        <li class="text">Mz. K3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-mz-c1">
+        <li class="text">Mz. C1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-mz-d1">
+        <li class="text">Mz. D1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-mz-e1">
+        <li class="text">Mz. E1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-mz-g1">
+        <li class="text">Mz. G1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-mz-h1">
+        <li class="text">Mz. H1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-mz-i1">
+        <li class="text">Mz. I1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-mz-f1---1">
+        <li class="text">Mz. F1 - 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-mz-f1---2">
+        <li class="text">Mz. F1 - 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-mz-f1---3">
+        <li class="text">Mz. F1 - 3</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-mz-a1---1">
+        <li class="text">Mz. A1 - 1</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-mz-a1---2">
+        <li class="text">Mz. A1 - 2</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-mz-a1---3">
+        <li class="text">Mz. A1 - 3</li>
+      </a>
+
+             
+
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed btn-resize" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+               Áreas</button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+
+             
+            
+            
+
+            
+
+              <a href="javascript:void(0)" class="scene" data-id="23-zona-de-golf">
+        <li class="text"><i class="fas fa-flag mr-2"></i>Zona de Golf</li>
+      </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+    
+    
+    
+    
+      
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      document.querySelector("body").classList.add("loaded");
+  }, 20)
+});
+</script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+
+<script src="assets/jquery-3.6.0.min.js"></script> 
+<script src="assets/popper.min.js"></script>
+<script src="assets/bootstrap.min.js"></script>
+
+
+
+<script src="index.js"></script>
+
+</body>
+</html>
