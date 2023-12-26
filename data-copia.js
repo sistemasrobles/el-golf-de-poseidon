@@ -443,14 +443,14 @@
           "pitch": 0.5290427333117904,
           "title": "Vendido",
           "text": "Lote 20 - 300m2",
-          "estado":"DISPONIBLE"
+          "estado":"VENDIDO"
         },
         {
           "yaw": 0.6500523442529484,
           "pitch": 0.573477249662055,
           "title": "Vendido",
           "text": "Lote 21 - 300m2",
-          "estado":"DISPONIBLE"
+          "estado":"VENDIDO"
         },
         {
           "yaw": 1.0150668160843672,
@@ -5338,7 +5338,7 @@
           "pitch": 0.50020182522500977,
           "title": "Vendido",
           "text": "Lote 28 - 300m2",
-          "estado":"VENDIDO"
+          "estado":"DISPONIBLE"
         },
         {
           "yaw": -0.3739660554867985,
